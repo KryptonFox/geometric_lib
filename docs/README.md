@@ -5,7 +5,7 @@ Supports **square**, **rectangle**, **triangle**, and **circle** calculations.
 
 ---
 
-## 📏 Square
+## Square
 
 ### **Area**
 
@@ -31,7 +31,7 @@ perimeter(2)  # returns 8
 
 ---
 
-## 🧱 Rectangle
+## Rectangle
 
 ### **Area**
 
@@ -57,7 +57,7 @@ perimeter(2, 3)  # returns 10
 
 ---
 
-## 🔺 Triangle
+## Triangle
 
 ### **Area**
 
@@ -83,7 +83,7 @@ perimeter(1, 2, 3)  # returns 6
 
 ---
 
-## ⚪ Circle
+## Circle
 
 ### **Area**
 
@@ -106,3 +106,10 @@ P = 2πr
 ```py
 perimeter(2)  # returns 4π
 ```
+
+# History
+
+**985dc72** -  Docs added  
+**bda8f26** -  Rectangle and Triangle added  
+**d078c8d** -  L-03: Docs added  
+**8ba9aeb** -  L-03: Circle and square added  
