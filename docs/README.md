@@ -110,21 +110,27 @@ perimeter(2)  # returns 4π
 # Testing
 
 Library have unit tests using ```unittest``` module
+
 ## **Run tests**
+
 ```sh
 python -m unittest
 ```
 
 ## **Tests coverage report**
+
 ```sh
-pip install coverage # if you don`t have coverage module installed
+pip install coverage    # if you don`t have coverage module installed
 
 python -m coverage report
 ```
 
 # History
 
-- **985dc72** -  Docs added
-- **bda8f26** -  Rectangle and Triangle added
-- **d078c8d** -  L-03: Docs added
 - **8ba9aeb** -  L-03: Circle and square added
+- **d078c8d** -  L-03: Docs added
+- **bda8f26** -  Rectangle and Triangle added
+- **985dc72** -  Docs added
+- **5ff6a76** -  README updated
+- **b3f472b** -  Added .gitignore
+- **cc7cd44** -  Added unit tests
