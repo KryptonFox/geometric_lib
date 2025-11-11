@@ -8,6 +8,8 @@ def area(a, h):
 
     Returns area of triangle with width a base and h heigth
     """
+    if a < 0 or h < 0:
+        raise ValueError
     return a * h / 2
 
 
@@ -22,4 +24,6 @@ def perimeter(a, b, c):
 
     Returns perimeter of triangle with a, b, c sides
     """
+    if a < 0 or b < 0 or c < 0:
+        raise ValueError
     return a + b + c

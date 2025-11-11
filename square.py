@@ -7,6 +7,8 @@ def area(a):
 
     Returns area of square with side a
     """
+    if a < 0:
+        raise ValueError
     return a * a
 
 
@@ -19,4 +21,6 @@ def perimeter(a):
 
     Returns perimeter of square with side a
     """
+    if a < 0:
+        raise ValueError
     return 4 * a

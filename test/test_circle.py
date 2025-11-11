@@ -22,3 +22,11 @@ class CircleTestCase(unittest.TestCase):
         res = perimeter(5)
         excepted = math.pi * 10
         self.assertEqual(res, excepted)
+
+    def test_area_negative_values(self):
+        with self.assertRaises(ValueError):
+            area(-1)
+
+    def test_perimeter_negative_values(self):
+        with self.assertRaises(ValueError):
+            perimeter(-1)

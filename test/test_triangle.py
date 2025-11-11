@@ -19,3 +19,11 @@ class TriangleTestCase(unittest.TestCase):
     def test_perimeter(self):
         res = perimeter(3, 4, 5)
         self.assertEqual(res, 12)
+
+    def test_area_negative_values(self):
+        with self.assertRaises(ValueError):
+            area(-1, -10)
+
+    def test_perimeter_negative_values(self):
+        with self.assertRaises(ValueError):
+            perimeter(-1, -2, 3)

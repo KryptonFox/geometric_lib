@@ -8,6 +8,8 @@ def area(a, b):
 
     Returns area of rectangle with width a and heigth b
     """
+    if a < 0 or b < 0:
+        raise ValueError
     return a * b
 
 
@@ -21,4 +23,6 @@ def perimeter(a, b):
 
     Returns perimeter of rectangle with width a and heigth b
     """
+    if a < 0 or b < 0:
+        raise ValueError
     return 2 * (a + b)

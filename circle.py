@@ -10,6 +10,8 @@ def area(r):
 
     Returns area of circle with radius a
     """
+    if r < 0:
+        raise ValueError
     return math.pi * r * r
 
 
@@ -22,4 +24,6 @@ def perimeter(r):
 
     Returns perimeter of circle with radius a
     """
+    if r < 0:
+        raise ValueError
     return 2 * math.pi * r
