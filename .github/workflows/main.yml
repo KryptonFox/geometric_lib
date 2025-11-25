@@ -19,7 +19,9 @@ jobs:
         run: sudo apt install python3-coverage
 
       - name: Generate coverage report
-        run: python -m coverage report
+        run: |
+          python -m coverage run -m unittest
+          python -m coverage report
 
       - name: Run tests
         run: python -m unittest
@@ -33,8 +35,10 @@ jobs:
       - name: Install coverage module
         run: pip install coverage
 
-      - name: Coverage report
-        run: python -m coverage report
+      - name: Generate coverage report
+        run: |
+          python -m coverage run -m unittest
+          python -m coverage report
 
       - name: Run tests
         run: python -m unittest
