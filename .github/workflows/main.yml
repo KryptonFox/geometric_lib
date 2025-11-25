@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  setup-linux:
+  test-linux:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,19 +18,13 @@ jobs:
       - name: Install coverage module
         run: sudo apt install python3-coverage
 
-  test-linux:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Coverage report
+      - name: Generate coverage report
         run: python -m coverage report
 
       - name: Run tests
         run: python -m unittest
 
-  setup-windows:
+  test-windows:
     runs-on: window-latest
 
     steps:
@@ -38,12 +32,6 @@ jobs:
 
       - name: Install coverage module
         run: pip install coverage
-
-  test-windows:
-    runs-on: window-latest
-
-    steps:
-      - uses: actions/checkout@v4
 
       - name: Coverage report
         run: python -m coverage report
