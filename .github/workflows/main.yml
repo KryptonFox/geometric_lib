@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install coverage module
-        run: apt install python3-coverage
+        run: sudo apt install python3-coverage
 
   test-linux:
     runs-on: ubuntu-latest
